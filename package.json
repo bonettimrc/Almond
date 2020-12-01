@@ -1,0 +1,19 @@
+{
+  "name": "larry_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon ."
+  },
+  "author": "bonetti.mrc",
+  "license": "ISC",
+  "devDependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  },
+  "dependencies": {
+    "johnny-five": "^2.0.0",
+    "serialport": "^9.0.2"
+  }
+}
