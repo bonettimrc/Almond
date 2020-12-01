@@ -1,10 +1,13 @@
-const express = require('express')
-const app = express()
-const port = process.env.PORT || 80
-const host = '0.0.0.0'
+require('dotenv').config()
 
+const app = express()
+const port = process.env.PORT
+const host = process.env.HOST
+const serialPort = process.env.SERIAL_PORT
+
+const express = require('express')
 const five = require('johnny-five')
-const serialPort = "COM3"
+
 const board = new five.Board({
     port: serialPort,
     repl: false,
